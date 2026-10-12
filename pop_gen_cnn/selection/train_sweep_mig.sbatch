@@ -27,4 +27,4 @@ pip install -q -r requirements.txt
 
 export KERAS_BACKEND=torch
 
-python -u train_sweep_cnn.py --data "$DATA" --out results/run_${SLURM_JOB_ID} --epochs 1 --max-chunks 2
+python -u train_sweep_cnn.py --data "$DATA" --out results/run_${SLURM_JOB_ID} --epochs 3
