@@ -6,7 +6,6 @@
 #SBATCH --gpus=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=28
-#SBATCH --mem=128G
 #SBATCH --time=24:00:00
 
 REPO=/vast/home/f/fejiroa/projects/Mathieson_Research_Upenn/pop_gen_cnn
