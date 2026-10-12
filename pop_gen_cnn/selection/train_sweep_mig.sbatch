@@ -5,7 +5,7 @@
 #SBATCH --partition=b200-mig45
 #SBATCH --gres=gpu:1
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=28
+#SBATCH --cpus-per-task=6
 #SBATCH --time=12:00:00
 
 REPO=/vast/home/f/fejiroa/projects/Mathieson_Research_Upenn/pop_gen_cnn
