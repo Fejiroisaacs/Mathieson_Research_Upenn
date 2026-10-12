@@ -6,7 +6,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=6
-#SBATCH --time=12:00:00
+#SBATCH --time=3:00:00
 
 REPO=/vast/home/f/fejiroa/projects/Mathieson_Research_Upenn/pop_gen_cnn
 PROJ=$REPO/selection
@@ -27,4 +27,4 @@ pip install -q -r requirements.txt
 
 export KERAS_BACKEND=torch
 
-python -u train_sweep_cnn.py --data "$DATA" --out results/run_${SLURM_JOB_ID} --epochs 3
+python -u train_sweep_cnn.py --data "$DATA" --out results/run_${SLURM_JOB_ID} --epochs 3 --seed ${SEED:-1}
