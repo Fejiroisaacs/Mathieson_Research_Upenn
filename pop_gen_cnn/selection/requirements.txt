@@ -1,0 +1,4 @@
+torch>=2.7
+keras==3.15.1
+numpy==2.5.3
+scikit-learn==1.9.1
